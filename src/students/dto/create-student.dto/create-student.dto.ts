@@ -11,4 +11,7 @@ export class CreateStudentDto {
 
     @IsString({each: true}) //each: true  => all is string(tous les valeures)
     readonly address:string[];
+
+    @IsString({each: true}) 
+    readonly courses:string[];
 }

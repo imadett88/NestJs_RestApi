@@ -23,7 +23,7 @@ export class StudentsController {
     // }
 
     @Get(':id')
-    findOne(@Param('id') id : string){
+    findOne(@Param('id') id : number){
         return this.studentService.findOne(id);
     }
 
